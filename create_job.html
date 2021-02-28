@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head> <title>Enter Job Data</title>
+      <link rel="stylesheet" href="createstyle.css">
+        <script src="create_job.js">
+        </script>
+    </head>
+    <h1>Enter Job Data</h1>
+    <body>
+              <div class="create">
+               <form id="create" method="get" action=""> 
+                <label><b>Title:<span class="required">*</span></b></label>    
+                <input type="text" name="title" id="title" placeholder="Title" required><br><br>
+
+                <label for="type"><b>Type:<span class="required">*</span></b></label>
+                <select name="type" id="type">
+                  <option value="0">None</option>
+                  <option value="1">PAT</option>
+                  <option value="2">QEA</option>
+                  <option value="3">ADM</option>
+                  <option value="4">CDB</option>
+                </select><br><br>
+
+                <label for="dept"><b>Deaprtment:<span class="required">*</span></b></label>
+                <select name="dept" id="dept">
+                  <option value="0">None</option>
+                  <option value="maintenance">Maintenance</option>
+                  <option value="coding">Coding</option>
+                  <option value="communication">Communication</option>
+                  <option value="other">Other</option>
+                </select><br><br>
+
+                <label for="ctry"><b>Country:<span class="required">*</span></b></label>
+                <select name="ctry" id="ctry">
+                  <option value="0">None</option>
+                  <option value="india">India</option>
+                  <option value="australia">Australia</option>
+                  <option value="iran">Iran</option>
+                  <option value="china">China</option>
+                </select><br><br>
+
+                <label><b>Description:<span class="required">*</span></b></label>    
+                <input type="text" name="desc" id="desc" placeholder="Describe here"><br><br>
+
+                <label for="start"><b>Opening Date:<span class="required">*</span></b></label>
+                <input type="date" id="start" name="trip-start" value="YYYY-DD-MM" min="2000-01-01" max="2020-12-31">
+
+                <br><br>
+                <input type="submit" value="Reset" class="btn" />
+                <input type="submit" value="Create" class="btn" onClick="apply()" /><br><br>
+                <p style="color:red">* marks = required fields</p>
+                </form>
+                </div>
+            </body>
+    </html>
